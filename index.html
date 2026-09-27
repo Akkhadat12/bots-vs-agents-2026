@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f6f8" />
+  <meta name="description" content="A visual story about where AI work actually finishes." />
+  <title>Grok Bot — Work That Stays On</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main id="stage" aria-live="polite">
+    <section class="scene cover active" data-scene="0" aria-label="Cover">
+      <div class="cover-copy"><h1>GROK BOT</h1><p>Work that stays on</p></div>
+      <button class="image-action cover-image" data-next aria-label="Explore the story"><img src="./assets/grok-bot.jpg" alt="Grok Bot desktop and iPhone interfaces with named bots and a computer preview" /></button>
+      <button class="enter" data-next>Enter <span aria-hidden="true">↗</span></button>
+    </section>
+
+    <section class="scene names" data-scene="1" aria-label="Chat and Bot" hidden>
+      <h2 class="sr-only">Same word, different object</h2>
+      <div class="name-pair">
+        <button class="chat-pane" data-next aria-label="A chat reply. Continue"><span class="small-label">CHAT</span><span class="message-lines"><i></i><i></i><i></i></span><span class="reply-dot"></span></button>
+        <div class="pair-bridge" aria-hidden="true"><span></span><b>≠</b><span></span></div>
+        <button class="product-photo" data-next aria-label="Grok Bot with its own computer. Continue"><span class="small-label">BOT</span><img src="./assets/grok-bot.jpg" alt="Real Grok Bot desktop and mobile UI" /></button>
+      </div>
+    </section>
+
+    <section class="scene layers" data-scene="2" aria-label="Three layers" hidden>
+      <h2 class="sr-only">Three destinations for a task</h2>
+      <div class="layer-grid">
+        <button class="layer-row" data-next><span class="layer-number">01</span><strong>CHAT</strong><span class="layer-outcome"><span class="mini-bubble"></span>Reply</span></button>
+        <button class="layer-row" data-next><span class="layer-number">02</span><strong>SESSION</strong><span class="layer-images"><img src="./assets/chatgpt-work.jpg" alt="ChatGPT Work interface" /><img src="./assets/claude-cowork.jpg" alt="Claude Cowork interface" /></span><span class="layer-outcome"><span class="mini-file"></span>Deliverable</span></button>
+        <button class="layer-row" data-next><span class="layer-number">03</span><strong>SHIFT</strong><span class="layer-images"><img src="./assets/grok-bot.jpg" alt="Grok Bot interface" /></span><span class="layer-outcome"><span class="mini-destination"></span>In the tool</span></button>
+      </div>
+    </section>
+
+    <section class="scene job" data-scene="3" aria-label="One job, three endings" hidden>
+      <h2 class="sr-only">The same sales brief can end in three different places</h2>
+      <div class="job-layout">
+        <div class="brief"><span class="brief-mark">✦</span><span>Sales call</span><div class="brief-lines"><i></i><i></i><i></i></div></div>
+        <div class="paths" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="destinations">
+          <button class="destination" data-next><span class="destination-icon notes-icon">≡</span><strong>NOTES</strong><span class="status empty">Copy</span></button>
+          <button class="destination" data-next><span class="destination-icon file-icon">▤</span><strong>FILE</strong><span class="status">Review</span></button>
+          <button class="destination selected" data-next><span class="destination-icon crm-icon">▦</span><strong>CRM</strong><span class="status filled">Landed</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene rush" data-scene="4" aria-label="The 2026 product wave" hidden>
+      <h2 class="sr-only">A sequence of actual releases followed by an upcoming event</h2>
+      <div class="timeline">
+        <button class="timeline-item" data-next><time>11 AUG</time><img src="./assets/grok-bot.jpg" alt="Grok Bot product UI" /><strong>Grok Bot</strong></button>
+        <button class="timeline-item" data-next><time>08 SEP</time><img src="./assets/muse-app.jpg" alt="Meta Muse App Store listing" /><strong>Muse</strong></button>
+        <button class="timeline-item future" data-next><time>29 SEP</time><img src="./assets/devday.jpg" alt="Official OpenAI DevDay 2026 teaser" /><strong>DevDay <em>ahead</em></strong></button>
+      </div>
+      <div class="timeline-line" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="scene landed" data-scene="5" aria-label="Work must land" hidden>
+      <h2 class="sr-only">A draft is not the same as a record in the tool</h2>
+      <div class="landed-grid">
+        <button class="draft-panel" data-next><span class="side-label">DRAFT</span><div class="draft-line"></div><div class="draft-line"></div><div class="draft-line short"></div><span class="task-token hollow">✦</span></button>
+        <div class="gap" aria-hidden="true"><span>→</span></div>
+        <button class="tool-panel" data-next><span class="side-label">IN THE TOOL</span><div class="record-head"><span class="task-token">✦</span><span>Account record</span><b>✓</b></div><div class="record-line"></div><div class="record-line short"></div><img src="./assets/grok-bot.jpg" alt="Real Grok Bot UI showing work in apps" /></button>
+      </div>
+    </section>
+
+    <section class="scene catch" data-scene="6" aria-label="Human approval" hidden>
+      <h2 class="sr-only">Persistent work still needs a human approval gate</h2>
+      <div class="catch-layout">
+        <button class="worker" data-next><img src="./assets/grok-bot.jpg" alt="Grok Bot desktop and mobile interface" /><strong>KEEP WORKING</strong></button>
+        <div class="gate" aria-hidden="true"><span>●</span><i></i></div>
+        <button class="approval" data-next><img src="./assets/muse-approval.jpg" alt="Muse purchase approval UI showing Deny and Allow" /><strong>STILL ASK</strong></button>
+      </div>
+    </section>
+
+    <section class="scene close" data-scene="7" aria-label="Close" hidden>
+      <h2>Hand off only<br /><em>landed work.</em></h2>
+      <div class="close-objects"><div class="close-test"><span>CHAT</span><span>SESSION</span><span class="chosen">SHIFT</span></div><button class="devday-image" data-next aria-label="Return to cover"><img src="./assets/devday.jpg" alt="Official OpenAI DevDay 2026 teaser, an upcoming event" /><span>29 SEP · AHEAD</span></button></div>
+      <button class="restart" data-next>Return to start ↺</button>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
